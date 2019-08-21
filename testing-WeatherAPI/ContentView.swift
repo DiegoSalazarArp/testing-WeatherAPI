@@ -25,7 +25,9 @@ struct ContentView: View {
                 .fixedSize()
                 .lineLimit(nil)
             Text(self.weatherVM.temperature)
-                .foregroundColor(Color.black)
+                .foregroundColor(Color.blue)
+            .padding()
+            .font(.custom("Arial", size: 60))
         }
     }
 }

@@ -20,7 +20,7 @@ struct ContentView: View {
         VStack(alignment: .center) {
             TextField("Ciudad?", text:  self.$weatherVM.cityName) {
                 self.weatherVM.search()
-            }.font(.custom("Arial", size: 50))
+            }.font(.custom("Arial", size: 60))
                 .padding()
                 .fixedSize()
                 .lineLimit(nil)

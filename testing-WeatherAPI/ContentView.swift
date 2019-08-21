@@ -17,16 +17,25 @@ struct ContentView: View {
     }
     
     var body: some View {
+        NavigationView{
         VStack(alignment: .center) {
-            TextField("Ciudad?", text:  self.$weatherVM.cityName) {
+            TextField("City?", text:  self.$weatherVM.cityName) {
                 self.weatherVM.search()
-            }.font(.custom("Arial", size: 60))
+            }.border(Color.gray)
                 .padding()
-                .fixedSize()
-                .lineLimit(nil)
-            Text(self.weatherVM.temperature)
-                .foregroundColor(Color.black)
+                
+            
+            HStack {
+                Text("Temperature: ")
+                    .padding()
+                Text(self.weatherVM.temperature + " F")
+                    .foregroundColor(Color.black)
+                
+                }
+            
+            }.navigationBarTitle("Weather")
         }
+        
     }
 }
 

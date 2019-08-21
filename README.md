@@ -1,3 +1,3 @@
 # testing-WeatherAPI
 
-Aplicación de testeo API en SwiftUI.
+testing: Uso de API para mostrar temperatura mediante una ciudad en especifico SwiftUI
